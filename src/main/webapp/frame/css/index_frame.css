@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Microsoft JhengHei;
+}
+
+.underlayer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dddfe8;
+    overflow: hidden;
+}
+
+.leftside {
+    width: 14%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: 3px 3px 20px dimgray;
+    float: left;
+}
+
+.logo {
+    /* border: 1px dotted silver;    GL */
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.rightside {
+    /* border: 1px dotted dimgray;    GL */
+    width: 80%;
+    height: 100vh;
+    margin-left: 19%;
+}
+
+.head {
+    /* border: 1px dotted dimgray;    GL */
+    width: 100%;
+    height: 15%;
+    margin: 0px 20px 20px 0px;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.content {
+    /* border: 1px dotted dimgray;    GL */
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    margin: 0px 20px 10px 0px;
+    overflow: auto;
+}
+
+.cmpyname {
+    /* border: 1px dotted dimgray;    GL */
+    width: 60%;
+    height: 100%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.cmpytext {
+    border: 2px solid #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.cmpytext01 {
+    font-size: 20px;
+    height: 40%;
+    background-color: transparent;
+    padding-top: 0.8%;
+}
+
+.cmpytext02 {
+    font-size: 16px;
+    background-color: #F9f9f9;
+    border-radius: 0px 0px 5px 5px;
+    height: 48%;
+    padding-top: 0.8%;
+}
+
+.userlog {
+    /* border: 1px dotted dimgray;    GL */
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    position: relative;
+}
+
+#user {
+    width: 75%;
+    height: 20%;
+    border: 2px solid #7973ae;
+    border-radius: 5px;
+    margin: 0px auto;
+    font-size: 20px;
+    padding: 2% 0px;
+    position: absolute;
+    bottom: 0%;
+    right: 3%;
+}
+
+#btnlogout {
+    width: 40px;
+    height: 25px;
+    background-color: #7973AE;
+    border-radius: 5px;
+    color: #F9f9f9;
+    font-family: Microsoft JhengHei;
+}

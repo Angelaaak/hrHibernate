@@ -1,0 +1,86 @@
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 10px auto;
+}
+
+a:visited {
+    color: #f9f9f9;
+}
+
+
+.pglinks {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.pglinks ul {
+    list-style-type: none;
+    overflow: auto;
+    /* border: 1px solid crimson;    GL */
+    text-align: center;
+}
+
+li {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 24px;
+    color: #f9f9f9;
+    width: 100%;
+    height: 65px;
+    border-radius: 15px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    margin-bottom: 15%;
+    /* border: 1px solid crimson;    GL*/
+}
+
+.linkslist {
+    /* 讓第二層ul跳脫文件流以利定位 */
+    position: absolute;
+    /* 避免出現捲軸 */
+    overflow: visible;
+    margin-left: 9.5%;
+    background-color: #7973ae;
+    width: 9%;
+    border-radius: 10px;
+    /* 預先隱藏第二層 */
+    visibility: hidden;
+}
+
+.pglinks ul li:hover ul {
+    /* 觸動第一層時，顯示第二層 */
+    visibility: visible;
+}
+
+.links {
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+#index,
+#pg2,
+#pg3 {
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    background-color: #7973ae;
+    text-indent: 10px;
+}
+
+#index {
+    background-image: url(/res/icons/index.png);
+}
+
+#pg2 {
+    background-image: url(/res/icons/pg1.png);
+}
+
+#pg3 {
+    background-image: url(/res/icons/pg2.png);
+}

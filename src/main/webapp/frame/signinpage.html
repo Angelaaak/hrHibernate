@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #DDDFE8;
+        }
+
+        figure {
+            margin: 80px auto 5px auto;
+            text-align: center;
+        }
+
+        .st1 {
+            width: 350px;
+            /* text-decoration: underline; */
+            font-family: Microsoft JhengHei;
+            border-bottom: 2px solid black;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .st2 {
+            font-family: Microsoft JhengHei;
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        input{
+            border:0;
+            padding: 4px;
+            font-size:16px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px gray;
+            
+        }
+
+        .sub {
+            font-family: Microsoft JhengHei;
+            margin: 15px auto;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .st3 {
+            font-family: Microsoft JhengHei;
+            text-align: center;
+            font-size: 14px;
+        }
+        .buttom1{
+            background-color:#7973AE ;
+            color: white;
+            border:0;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+            <form action="../DemoLogin.do" method="get">
+                <figure><img src="image/logo.png" alt="" title="" width="150"></figure>
+                <div class="st1">HR有限公司 人力資源管理系統</div>
+                <div class="st2">
+                    <input type="text" id="account1" name="empno" autofocus placeholder="員編" required>
+                </div>
+                <div class="st2">
+                    <input type="password" id="account2" name="password" placeholder="密碼" required>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="登入" class="buttom1">
+                </div>
+                <div class="st3">[如遇登入問題，請與系統管理員聯絡]</div>
+            </form>
+</body>
+
+</html>

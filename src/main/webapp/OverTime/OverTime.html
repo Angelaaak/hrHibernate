@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        fieldset {
+            width: 600px;
+            height: 400px;
+            padding: .35em .625em .75em;
+            margin: auto;
+            border: 2px solid silver;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .f2{
+            width: 600px;
+            height: 150px;
+        }
+
+        legend {
+            padding: .5em;
+            border: 0;
+            width: auto;
+            margin-bottom: 0px;
+            float: none;
+            font-size: 20px;
+            font-family: 微軟正黑體;
+            font-weight: 900;
+        }
+
+        .form1 {
+            width: 200px;
+            height: 20px;
+            /* display: inline; */
+
+        }
+        .form2{
+            width: 300px;
+            height: 100px;
+        }
+
+        .t1 {
+            width: 100px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .radio_1 {
+            margin-right: 20px;
+        }
+
+        .d1 {
+            text-align: left;
+        }
+        .d2{
+         	text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="../EmployeeInserServletAction.do" method="post">
+        <fieldset class="f1">
+            <legend>員工請假申請表</legend>
+            <div class="form-group">
+                <label for="empname" class="t1">申請人:</label>
+                <input type="text" class="form-control form1" id="empname" name="EmpName">
+            </div>
+            <div class="form-group">
+                <label for="date" class="t1">申請日期:</label>
+                <input type="date" class="form-control form1" id="date" name="Date of Application">
+            </div>
+
+            <div class="form-group">
+                <label for="dep" class="t1">申請部門:</label>
+                <input type="text" class="form-control form1" id="dep" name="department">
+            </div>
+             <div class="form-group">
+                <label for="dep" class="t1">職稱:</label>
+                <input type="text" class="form-control form1" id="pos" name="position">
+            </div>
+            
+
+            <div class="form-group">
+                <label class="t1">加班類型:</label>
+            </div>
+
+            <div class="form-group d1 ">
+                <input type="radio" class="form-check-input" name="Overtime category" value="平日加班">
+                <label class="form-check-label radio_1"> 平日加班</label>
+
+                <input type="radio" class="form-check-input" name="Overtime category" value="假日加班">
+                <label class="form-check-label radio_1">假日加班</label>
+
+                <input type="radio" class="form-check-input" name="Overtime category" value="休假加班">
+                <label class="form-check-label radio_1">休假加班</label>
+            </div>
+            <div class="form-group">
+                <label for="Overtime" class="t1">加班日期:</label>
+                <input type="date" class="form-control form1" id="Overtime" name="OvertimeDate">
+            </div>
+            <div class="form-group">
+                <label for="stime" class="t1">開始時間:</label>
+                <input type="time" class="form-control form1" id="stime" name="Starting time">
+            </div>
+            <div class="form-group">
+                <label for="endtime" class="t1">結束時間:</label>
+                <input type="time" class="form-control form1" id="endtime" name="Ending time">
+            </div>
+            <div class="form-group">
+                <label for="Cause" class="t1">加班事由:</label>
+                <input type="text" class="form-control form1" id="Cause" name="reason">
+            </div>
+        </fieldset>
+        <fieldset class="f2">
+            <div class="form-group">
+                <label for="Remarks" class="t1">備註:</label>
+                <input type="text" class="form-control form2" id="Remarks" name="Remarks">
+            </div>
+        </fieldset><br>
+        <div class="d2">
+        <input type="submit" class="btn btn-primary" value="submit"> 
+         <a href="http://localhost:8080/HR/frame/index.html">
+			<button type="button" class="btn btn-primary">Return</button> 
+		</a>
+        </div>
+        
+    </form>
+
+</body>
+
+</html>
